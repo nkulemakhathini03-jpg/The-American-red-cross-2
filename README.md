@@ -1,4 +1,4 @@
-# The American Red Cross Website Prototype
+i# The American Red Cross Website Prototype
 
 ### Project Overview
 
@@ -23,7 +23,7 @@ This phase of the project focused on the visual appeal and user experience of th
 * **`donate.html` & `get-help.html`:** Misplaced and duplicated image tags within the content sections were removed to ensure a clean and correct layout.
 * **`contact.html`:** Ensured the link to the external `style.css` file was present.
 * **`style.css`:** A new, comprehensive stylesheet was created from scratch to handle all styling, including base styles, layout, and responsive design for all pages.
-* **`script.js`:** A new JavaScript file was created to handle the mobile navigation toggle and the alert banner functionality.
+* **'No JavaScript Added':** No JavaScript was added in this part of the assignment. The script.js file is prepared for development in a future part of the project
 
 ---
 
