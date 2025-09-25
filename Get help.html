@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Help - American Red Cross</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="alert-banner" id="alertBanner">
+        <p>⚠️ Hurricane Warning in effect for Florida. <a href="get-help.html">Find an open shelter.</a></p>
+        <button class="alert-close">&times;</button>
+    </div>
+
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <div class="logo-text">American Red Cross</div>
+            </a>
+            <button class="nav-toggle" id="navToggle">☰</button>
+            <nav class="nav" id="mainNav">
+                <ul class="nav__list">
+                    <li><a href="index.html" class="nav__link">Home</a></li>
+                    <li><a href="about.html" class="nav__link">About Us</a></li>
+                    <li><a href="donate.html" class="nav__link">Donate</a></li>
+                    <li><a href="get-help.html" class="nav__link active">Get Help</a></li>
+                    <li><a href="contact.html" class="nav__link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Find Help & Resources</h1>
+            <p>Locate services and support in your area</p>
+        </div>
+    </section>
+
+    <section class="map-section">
+        <div class="container">
+            <h2 class="text-center">Find Resources Near You</h2>
+            <p class="text-center">Use our interactive map to locate shelters, blood donation centers, and other Red Cross services in your area.</p>
+
+            <div class="map-container">
+                <div id="mapOverlay" class="map-overlay"></div>
+                <svg class="us-map" viewBox="0 0 1000 600" xmlns="http://www.w3.org/2000/svg">
+                    <path class="state-area" d="M150,250 L180,230 L200,250 L190,280 L160,270 Z" data-state="California" data-shelters="24"></path>
+                    <path class="state-area" d="M200,250 L230,240 L250,260 L240,290 L210,280 Z" data-state="Texas" data-shelters="18"></path>
+                    <path class="state-area" d="M250,260 L280,250 L300,270 L290,300 L260,290 Z" data-state="Florida" data-shelters="5"></path>
+                    <path class="state-area" d="M300,270 L330,260 L350,280 L340,310 L310,300 Z" data-state="New York" data-shelters="12"></path>
+                    <path class="state-area" d="M350,280 L380,270 L400,290 L390,320 L360,310 Z" data-state="Illinois" data-shelters="7"></path>
+                    <path class="state-area" d="M400,290 L430,280 L450,300 L440,330 L410,320 Z" data-state="Ohio" data-shelters="9"></path>
+                    <path class="state-area" d="M450,300 L480,290 L500,310 L490,340 L460,330 Z" data-state="Pennsylvania" data-shelters="14"></path>
+                    <path class="state-area" d="M500,310 L530,300 L550,320 L540,350 L510,340 Z" data-state="Georgia" data-shelters="10"></path>
+                    <path class="state-area" d="M550,320 L580,310 L600,330 L590,360 L560,350 Z" data-state="North Carolina" data-shelters="16"></path>
+                </svg>
+            </div>
+            <p class="map-disclaimer">Disclaimer: This is a prototype and does not reflect real-time data. For actual services, please use the official Red Cross website or mobile app.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>About Us</h3>
+                    <p>The American Red Cross prevents and alleviates human suffering in the face of emergencies by mobilizing the power of volunteers and the generosity of donors.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="donate.html">Donate</a></li>
+                        <li><a href="get-help.html">Get Help</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <ul class="footer-links">
+                        <li>National Headquarters</li>
+                        <li>431 18th Street NW</li>
+                        <li>Washington, DC 20006</li>
+                        <li>1-800-RED-CROSS</li>
+                        <li><a href="mailto:info@redcross.org">info@redcross.org</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2023 American Red Cross. This is a prototype website for educational purposes.</p>
+                <p>Content based on the official American Red Cross website and the provided project proposal.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
