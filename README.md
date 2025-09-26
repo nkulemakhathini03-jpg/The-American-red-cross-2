@@ -13,9 +13,13 @@ This phase of the project focused on the visual appeal and user experience of th
     * **Typography:** Custom typography styles were applied to headlines, body text, and links for enhanced readability.
     * **Layout:** CSS Flexbox and Grid were used to create a modern, flexible layout that organizes content effectively on various screen sizes.
 * **Responsive Design:**
+* **screenshots:**
+* Desktop view*<img width="1366" height="731" alt="desktop view" src="https://github.com/user-attachments/assets/ebb48019-0748-4ade-9c27-7ef35dba181f" />
+* Mobile view* <img width="242" height="479" alt="mobile view" src="https://github.com/user-attachments/assets/e2598f41-a421-45d7-857a-4ac2cc3c431f" />
     * **Breakpoints:** Media queries were implemented to create key breakpoints for desktop, tablet, and mobile devices, ensuring the layout adapts seamlessly.
     * **Relative Units:** Relative units like `rem` and percentages were used for font sizes and widths to maintain proportionality on different screens.
     * **Responsive Images:** The homepage hero image is now set as a CSS background, which handles responsiveness automatically.
+ 
 
 ### Changelog
 
