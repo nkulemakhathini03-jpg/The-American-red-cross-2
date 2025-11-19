@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Get Help - American Red Cross</title>
+    <meta name="description" content="Find emergency shelters, blood donation centers, and disaster relief services near you with the American Red Cross.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -25,6 +26,7 @@
                     <li><a href="about.html" class="nav__link">About Us</a></li>
                     <li><a href="donate.html" class="nav__link">Donate</a></li>
                     <li><a href="get-help.html" class="nav__link active">Get Help</a></li>
+                    <li><a href="enquiry.html" class="nav__link">Enquire</a></li>
                     <li><a href="contact.html" class="nav__link">Contact</a></li>
                 </ul>
             </nav>
@@ -38,26 +40,73 @@
         </div>
     </section>
 
-    <section class="map-section">
+    <section class="emergency-services">
         <div class="container">
-            <h2 class="text-center">Find Resources Near You</h2>
-            <p class="text-center">Use our interactive map to locate shelters, blood donation centers, and other Red Cross services in your area.</p>
-
-            <div class="map-container">
-                <div id="mapOverlay" class="map-overlay"></div>
-                <svg class="us-map" viewBox="0 0 1000 600" xmlns="http://www.w3.org/2000/svg">
-                    <path class="state-area" d="M150,250 L180,230 L200,250 L190,280 L160,270 Z" data-state="California" data-shelters="24"></path>
-                    <path class="state-area" d="M200,250 L230,240 L250,260 L240,290 L210,280 Z" data-state="Texas" data-shelters="18"></path>
-                    <path class="state-area" d="M250,260 L280,250 L300,270 L290,300 L260,290 Z" data-state="Florida" data-shelters="5"></path>
-                    <path class="state-area" d="M300,270 L330,260 L350,280 L340,310 L310,300 Z" data-state="New York" data-shelters="12"></path>
-                    <path class="state-area" d="M350,280 L380,270 L400,290 L390,320 L360,310 Z" data-state="Illinois" data-shelters="7"></path>
-                    <path class="state-area" d="M400,290 L430,280 L450,300 L440,330 L410,320 Z" data-state="Ohio" data-shelters="9"></path>
-                    <path class="state-area" d="M450,300 L480,290 L500,310 L490,340 L460,330 Z" data-state="Pennsylvania" data-shelters="14"></path>
-                    <path class="state-area" d="M500,310 L530,300 L550,320 L540,350 L510,340 Z" data-state="Georgia" data-shelters="10"></path>
-                    <path class="state-area" d="M550,320 L580,310 L600,330 L590,360 L560,350 Z" data-state="North Carolina" data-shelters="16"></path>
-                </svg>
+            <h2>Emergency Services</h2>
+            <div class="service-cards">
+                <div class="service-card">
+                    <i class="fas fa-home service-icon"></i>
+                    <h3>Find a Shelter</h3>
+                    <p>Locate open emergency shelters during disasters and emergencies in your area.</p>
+                    <button class="btn btn-primary" onclick="findShelters()">Find Shelters</button>
+                </div>
+                
+                <div class="service-card">
+                    <i class="fas fa-tint service-icon"></i>
+                    <h3>Blood Donation</h3>
+                    <p>Find blood donation centers and drives near you to help save lives.</p>
+                    <button class="btn btn-primary" onclick="findBloodDrives()">Find Blood Drives</button>
+                </div>
+                
+                <div class="service-card">
+                    <i class="fas fa-first-aid service-icon"></i>
+                    <h3>Disaster Assistance</h3>
+                    <p>Get help with disaster recovery, emergency supplies, and financial assistance.</p>
+                    <button class="btn btn-primary" onclick="getDisasterHelp()">Get Assistance</button>
+                </div>
             </div>
-            <p class="map-disclaimer">Disclaimer: This is a prototype and does not reflect real-time data. For actual services, please use the official Red Cross website or mobile app.</p>
+        </div>
+    </section>
+
+    <section class="resource-search">
+        <div class="container">
+            <h2>Find Resources Near You</h2>
+            <div class="search-box">
+                <input type="text" id="locationSearch" placeholder="Enter your city or zip code...">
+                <button class="btn btn-primary" onclick="searchResources()">Search</button>
+            </div>
+            
+            <div id="searchResults" class="search-results">
+                <!-- Search results will appear here -->
+            </div>
+        </div>
+    </section>
+
+    <section class="hotline-section">
+        <div class="container">
+            <h2>24/7 Emergency Hotlines</h2>
+            <div class="hotline-cards">
+                <div class="hotline-card">
+                    <i class="fas fa-phone-alt hotline-icon"></i>
+                    <h3>Disaster Assistance</h3>
+                    <p class="hotline-number">1-800-RED-CROSS</p>
+                    <p>Available 24/7 for disaster emergencies</p>
+                </div>
+                
+                <div class="hotline-card">
+                    <i class="fas fa-tint hotline-icon"></i>
+                    <h3>Blood Services</h3>
+                    <p class="hotline-number">1-800-GIVE-LIFE</p>
+                    <p>Blood donation information and appointments</p>
+                </div>
+                
+                <div class="hotline-card">
+                    <i class="fas fa-user-friends hotline-icon"></i>
+                    <h3>Military Families</h3>
+                    <p class="hotline-number">1-877-272-7337</p>
+                    <p>Support for service members and families</p>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -83,6 +132,7 @@
                         <li><a href="about.html">About Us</a></li>
                         <li><a href="donate.html">Donate</a></li>
                         <li><a href="get-help.html">Get Help</a></li>
+                        <li><a href="enquiry.html">Enquire</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
@@ -105,5 +155,148 @@
             </div>
         </div>
     </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/form-validation.js"></script>
+    
+    <script>
+        // Get Help page specific functionality
+        function findShelters() {
+            const location = prompt("Please enter your city or zip code:");
+            if (location) {
+                alert(`Searching for emergency shelters near ${location}...\n\nIn a real application, this would show actual shelter locations and availability.`);
+                showSearchResults(`Shelters near ${location}: Emergency Shelter A, Community Center B, School Gym C`);
+            }
+        }
+        
+        function findBloodDrives() {
+            const location = prompt("Please enter your city or zip code:");
+            if (location) {
+                alert(`Searching for blood donation centers near ${location}...\n\nIn a real application, this would show actual blood drive locations and schedules.`);
+                showSearchResults(`Blood drives near ${location}: City Hospital, Community Blood Center, Mobile Unit`);
+            }
+        }
+        
+        function getDisasterHelp() {
+            alert("Connecting you to disaster assistance resources...\n\nAvailable services:\n• Emergency shelter\n• Food and water\n• Medical assistance\n• Mental health support\n• Financial assistance");
+        }
+        
+        function searchResources() {
+            const searchTerm = document.getElementById('locationSearch').value;
+            if (searchTerm.trim()) {
+                showSearchResults(`Resources near ${searchTerm}:\n• Emergency Shelter: 123 Main St\n• Food Distribution: 456 Oak Ave\n• Medical Clinic: 789 Pine Rd`);
+            } else {
+                alert("Please enter a location to search.");
+            }
+        }
+        
+        function showSearchResults(message) {
+            const resultsDiv = document.getElementById('searchResults');
+            resultsDiv.innerHTML = `
+                <div class="result-card">
+                    <h3>Search Results</h3>
+                    <p>${message}</p>
+                    <p class="disclaimer"><strong>Note:</strong> This is a prototype. In a real application, this would connect to live data from Red Cross services.</p>
+                </div>
+            `;
+            resultsDiv.style.display = 'block';
+        }
+    </script>
+    
+    <style>
+        .emergency-services {
+            padding: 4rem 0;
+            background: #f8f9fa;
+        }
+        
+        .service-icon {
+            font-size: 3rem;
+            color: #e74c3c;
+            margin-bottom: 1rem;
+        }
+        
+        .resource-search {
+            padding: 4rem 0;
+        }
+        
+        .search-box {
+            display: flex;
+            gap: 1rem;
+            max-width: 500px;
+            margin: 2rem auto;
+        }
+        
+        .search-box input {
+            flex: 1;
+            padding: 0.75rem;
+            border: 2px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+        
+        .search-results {
+            display: none;
+            max-width: 600px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .result-card {
+            text-align: center;
+        }
+        
+        .disclaimer {
+            font-size: 0.875rem;
+            color: #666;
+            font-style: italic;
+            margin-top: 1rem;
+        }
+        
+        .hotline-section {
+            padding: 4rem 0;
+            background: #2c3e50;
+            color: white;
+        }
+        
+        .hotline-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .hotline-card {
+            text-align: center;
+            padding: 2rem;
+            background: rgba(255,255,255,0.1);
+            border-radius: 8px;
+        }
+        
+        .hotline-icon {
+            font-size: 2.5rem;
+            color: #e74c3c;
+            margin-bottom: 1rem;
+        }
+        
+        .hotline-number {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #e74c3c;
+            margin: 1rem 0;
+        }
+        
+        @media (max-width: 768px) {
+            .search-box {
+                flex-direction: column;
+            }
+            
+            .hotline-cards {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </body>
 </html>
