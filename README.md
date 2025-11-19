@@ -84,22 +84,23 @@ This phase focuses on implementing JavaScript functionality, SEO best practices,
   - Accessibility improvements
 
 ## File Structure
-American-red-cross-website/
-├── index.html (Homepage - main landing page)
-├── about.html (About Us page)
-├── donate.html (Donation page)
-├── get-help.html (Resources & help page)
-├── contact.html (Contact form page)
-├── enquiry.html (Service enquiry page) - NEW
-├── robots.txt (SEO - search engine instructions) - NEW
-├── sitemap.xml (SEO - site structure) - NEW
+your-repository/
+├── index.html
+├── about.html
+├── donate.html
+├── get-help.html
+├── contact.html
+├── enquiry.html
+├── robots.txt
+├── sitemap.xml
 ├── LICENSE.txt
-├── README.md (Updated documentation)
+├── README.md
+├── REFERENCES.md          ← NEW FILE
 ├── css/
-│ └── style.css (Main stylesheet - UPDATED)
+│   └── style.css
 └── js/
-├── script.js (Main JavaScript functionality - UPDATED)
-└── form-validation.js (Form validation scripts) - NEW
+    ├── script.js
+    └── form-validation.js
 
 ## Technologies Used
 
