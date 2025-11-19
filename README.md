@@ -84,23 +84,24 @@ This phase focuses on implementing JavaScript functionality, SEO best practices,
   - Accessibility improvements
 
 ## File Structure
-your-repository/
+American-red-cross-website/
 ├── index.html
 ├── about.html
 ├── donate.html
 ├── get-help.html
+├── gallery.html ← NEW GALLERY PAGE
 ├── contact.html
 ├── enquiry.html
 ├── robots.txt
 ├── sitemap.xml
 ├── LICENSE.txt
 ├── README.md
-├── REFERENCES.md          ← NEW FILE
+├── REFERENCES.md
 ├── css/
-│   └── style.css
+│ └── style.css ← UPDATED WITH GALLERY STYLES
 └── js/
-    ├── script.js
-    └── form-validation.js
+├── script.js
+└── form-validation.js
 
 ## Technologies Used
 
