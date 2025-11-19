@@ -1,0 +1,23 @@
+# robots.txt for American Red Cross Website Prototype
+# Educational Project - St10451624
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://yourdomain.com/sitemap.xml
+
+# Disallow admin and private directories (example - not used in this project)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /cgi-bin/
+
+# Allow all crawlers to access all content
+Allow: /css/
+Allow: /js/
+Allow: /images/
+
+# Crawl delay (optional - prevents overloading server)
+# Crawl-delay: 10
+
+# Educational project - no restrictions needed

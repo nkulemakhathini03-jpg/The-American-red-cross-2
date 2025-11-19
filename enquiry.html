@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquire - American Red Cross</title>
+    <meta name="description" content="Enquire about American Red Cross services, volunteering opportunities, or sponsorship. Join our humanitarian mission.">
+    <meta name="keywords" content="volunteer, sponsorship, training, American Red Cross, enquiry, services">
+    <meta name="author" content="American Red Cross">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="alert-banner" id="alertBanner">
+        <p>⚠️ Hurricane Warning in effect for Florida. <a href="get-help.html">Find an open shelter.</a></p>
+        <button class="alert-close">&times;</button>
+    </div>
+
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <div class="logo-text">American Red Cross</div>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">☰</button>
+            <nav class="nav" id="mainNav">
+                <ul class="nav__list">
+                    <li><a href="index.html" class="nav__link">Home</a></li>
+                    <li><a href="about.html" class="nav__link">About Us</a></li>
+                    <li><a href="donate.html" class="nav__link">Donate</a></li>
+                    <li><a href="get-help.html" class="nav__link">Get Help</a></li>
+                    <li><a href="enquiry.html" class="nav__link active">Enquire</a></li>
+                    <li><a href="contact.html" class="nav__link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Make an Enquiry</h1>
+            <p>Interested in our services, volunteering, or sponsorship opportunities?</p>
+        </div>
+    </section>
+
+    <section class="enquiry-content">
+        <div class="container">
+            <div class="enquiry-grid">
+                <div class="enquiry-info">
+                    <h2>Opportunities Available</h2>
+                    
+                    <div class="opportunity-card">
+                        <div class="opportunity-icon">
+                            <i class="fas fa-hands-helping"></i>
+                        </div>
+                        <div>
+                            <h3>Volunteer</h3>
+                            <p>Join our team of dedicated volunteers and make a difference in your community. We need help with disaster response, blood drives, and community outreach.</p>
+                        </div>
+                    </div>
+
+                    <div class="opportunity-card">
+                        <div class="opportunity-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <div>
+                            <h3>Corporate Sponsorship</h3>
+                            <p>Partner with us through corporate sponsorship and support our humanitarian mission. Various partnership levels available.</p>
+                        </div>
+                    </div>
+
+                    <div class="opportunity-card">
+                        <div class="opportunity-icon">
+                            <i class="fas fa-first-aid"></i>
+                        </div>
+                        <div>
+                            <h3>Training Services</h3>
+                            <p>Enquire about our first aid, CPR, and disaster preparedness training programs for organizations and individuals.</p>
+                        </div>
+                    </div>
+
+                    <div class="opportunity-card">
+                        <div class="opportunity-icon">
+                            <i class="fas fa-tint"></i>
+                        </div>
+                        <div>
+                            <h3>Blood Drive Coordination</h3>
+                            <p>Host a blood drive at your organization or learn about upcoming blood donation opportunities in your area.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="enquiry-form">
+                    <h2>Send Your Enquiry</h2>
+                    <p>Fill out the form below and we'll get back to you within 2 business days.</p>
+                    
+                    <form id="enquiryForm">
+                        <div class="form-group">
+                            <label for="enquiryType">Enquiry Type *</label>
+                            <select id="enquiryType" name="enquiryType" required>
+                                <option value="">Please select...</option>
+                                <option value="volunteer">Volunteer Opportunities</option>
+                                <option value="sponsorship">Corporate Sponsorship</option>
+                                <option value="training">Training Services</option>
+                                <option value="blood-drive">Blood Drive Coordination</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required minlength="2" placeholder="Enter your full name">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="1234567890">
+                            <small style="color: #666; font-size: 0.875rem;">10-digit number only</small>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="organization">Organization (if applicable)</label>
+                            <input type="text" id="organization" name="organization" placeholder="Your company or organization">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Your Enquiry *</label>
+                            <textarea id="message" name="message" rows="6" required minlength="20" placeholder="Please provide details about your enquiry, including any specific questions or requirements..."></textarea>
+                            <small style="color: #666; font-size: 0.875rem;">Minimum 20 characters</small>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="newsletter" checked>
+                                Send me updates about Red Cross opportunities and events
+                            </label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary">Submit Enquiry</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>About Us</h3>
+                    <p>The American Red Cross prevents and alleviates human suffering in the face of emergencies by mobilizing the power of volunteers and the generosity of donors.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="donate.html">Donate</a></li>
+                        <li><a href="get-help.html">Get Help</a></li>
+                        <li><a href="enquiry.html">Enquire</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <ul class="footer-links">
+                        <li>National Headquarters</li>
+                        <li>431 18th Street NW</li>
+                        <li>Washington, DC 20006</li>
+                        <li>1-800-RED-CROSS</li>
+                        <li><a href="mailto:info@redcross.org">info@redcross.org</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2023 American Red Cross. This is a prototype website for educational purposes.</p>
+                <p>Content based on the official American Red Cross website and the provided project proposal.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/form-validation.js"></script>
+</body>
+</html>
